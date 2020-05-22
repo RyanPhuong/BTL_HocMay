@@ -35,7 +35,7 @@ def PlotTemp_Month (Time, Temperature):
     plt.show()
 #display 12 diagrams continuos
 for i in range(2, 13):
-    Timee = data.iloc[13*(i-1):(13*(i-1)+15), 15:16]
-    Temp_Feb = data.iloc[13*(i-1):(13*(i-1)+15), 1:2]
+    Timee = data.iloc[13*i:(13*i+15), 15:16]
+    Temp_Feb = data.iloc[13*i:(13*i+15), 1:2]
     PlotTemp_Month(Timee, Temp_Feb)
         
